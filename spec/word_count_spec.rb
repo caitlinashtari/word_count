@@ -23,7 +23,7 @@ describe('String#word_count') do
   end
 
   it('returns a fixnum for each instance of a user inputted word in a user inputted string indepent of special characters within that string') do
-    expect("Did I already say I like piz-za?".word_count("pizza")).to(eq(1S))
+    expect("Did I already say I like piz-za?".word_count("pizza")).to(eq(1))
   end
 
 end
