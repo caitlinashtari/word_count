@@ -10,9 +10,10 @@ _This site asks the user to enter a string as well as a word from that string. T
 
 ## Setup/Installation Requirements
 
+*_Visit: https://word-count-ca.herokuapp.com/_
 * _Sinatra 1.4.7_
 *_Ruby 2.2.2_
-*_Visit: _
+
 
 
 ## Known Bugs
