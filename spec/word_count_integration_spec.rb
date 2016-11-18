@@ -8,7 +8,7 @@ describe('the word_count path', {:type => :feature}) do
     visit('/')
     fill_in('string_input', :with => "pizza pizza pizza!")
     fill_in('argument_input', :with => "pizza")
-    click_button('COUNT MY WORD!')
+    click_button('COUNT!')
     expect(page).to have_content('3')
   end
 end

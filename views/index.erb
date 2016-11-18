@@ -1,10 +1,32 @@
-<h1>Count Your Words</h1>
-<form action="/word_count">
-  <div class="form-group">
-    <label for="string_input">Enter a sentence:</label>
-    <input type="text" name="string_input" id="string_input" class="form-control">
-    <label for="argument_input">Enter one word from your sentence that you would like to count:</label>
-    <input type="text" name="argument_input" id="argument_input" class="form-control">
+<div class="jumbotron">
+  <h1>Count Your Words</h1>
+</div>
+
+<div class="row">
+  <div class="container">
+    <form action="/exact_word_count" id="first_form">
+      <div class="form-group">
+        <label for="string_input">Enter a sentence:</label>
+        <input type="text" name="string_input" id="string_input" class="form-control">
+        <label for="argument_input">Enter one word from your sentence that you would like to count:</label>
+        <input type="text" name="argument_input" id="argument_input" class="form-control">
+      </div>
+      <button type="submit" class="btn" id="exact_match">COUNT!</button>
+      <p>Want to include all words that contain your word?</p>
+      <button type="submit" class="btn" id="more_matches">full COUNT!</button>
+    </form>
+
+    <div class="initially_hidden">
+      <form action="/all_word_count" id="second_form">
+        <div class="form-group">
+          <label for="string_input">Enter a sentence:</label>
+          <input type="text" name="string_input" id="string_input" class="form-control">
+          <label for="argument_input">Enter one word from your sentence that you would like to count:</label>
+          <input type="text" name="argument_input" id="argument_input" class="form-control">
+        </div>
+
+        <button type="submit" class="btn" id="all_match">all COUNT!</button>
+      </form>
+    </div>
   </div>
-  <button type="submit" class="btn btn-info">COUNT MY WORD!</button>
-</form>
+</div>

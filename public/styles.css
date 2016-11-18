@@ -1,0 +1,42 @@
+body {
+  font-family: 'Shrikhand', cursive;
+}
+
+.initially_hidden {
+  display: none;
+}
+
+/*jumbotron and heading*/
+.jumbotron {
+  padding-top: 100px;
+  background-color: #FFF;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*teal container row*/
+.row {
+  background-color: #0BF3DC;
+  padding: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+/*form*/
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+.form-group label {
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.btn {
+  font-size: 20px;
+  margin: 20px;
+}

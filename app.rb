@@ -7,7 +7,14 @@ get('/') do
   erb(:index)
 end
 
-get('/word_count') do
+get('/exact_word_count') do
+  @argument = params.fetch('argument_input')
+  @string = params.fetch('string_input')
+  @count = @string.single_word(@argument)
+  erb(:word_count)
+end
+
+get('/all_word_count') do
   @argument = params.fetch('argument_input')
   @string = params.fetch('string_input')
   @count = @string.word_count(@argument)
